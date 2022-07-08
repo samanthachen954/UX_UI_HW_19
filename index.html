@@ -2,7 +2,24 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
         <link href="../UX_UI_HW_19/CSS/index.css" rel="stylesheet" type="text/css">
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="js/hoverline.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.category').makeNavbar();
+                    $('#hoverline-nav').hoverline({'color': 'white'});
+            
+            });
+        </script>
+        <!--<script type="text/javascript" src="js/index.js">
+            $('.category').makeNavbar();
+        </script>-->
         <title>sammie's home screen</title>
     </head>
     <body>
@@ -12,16 +29,26 @@
                     sammie chen
                 </div>
                 <div class="category" id="hoverline-nav">
-                    <a class="hov-nav">case studies</a>
-                    <a class="hov-nav">web designs</a>
-                    <a class="hov-nav">graphic designs</a>
-                    <a class="hov-nav">contact me</a>
+                    <ul id="nav-list">
+                        <li class="hov-nav">
+                            <a>case studies</a>
+                        </li>
+                        <li class="hov-nav">
+                            <a>graphic designs</a>
+                        </li>
+                        <li class="hov-nav">
+                            <a>web designs</a>
+                        </li>
+                        <li class="hov-nav">
+                            <a>contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="message">
                 <h1 class="greet">hello there!</h1>
                 <h2 class="name">my name is sammie</h2>
-                <button class="hitsub" href="https://docs.google.com/document/d/1F7CJUP-WwVgGjbFqRthMzhlU03UaQFoquF6QNJLY3RA/edit?usp=sharing">resume</button>
+                <button class="hitsub" href="https://docs.google.com/document/d/1F7CJUP-WwVgGjbFqRthMzhlU03UaQFoquF6QNJLY3RA/edit?usp=sharing">resum&eacute;</button>
             </div>
             <div class="foot">sammie chen | samanthachen954@gmail.com</div>
         </section>
@@ -29,15 +56,15 @@
         <section class = "my_skills">
             <h1 class="MySkillsHead">My Skills</h1>
             <div class="flexContainer">
-                <div class="UX_research">
+                <div class="skillcontainer">
                     <h3 class="skill_h">User research</h3>
                         <p class="skill_p">Generative Design Research, Data Analytics & Coding, Data Visualization, Qualitative & Quantitative User Research, Proficient in Research Methods for Psychology & Biology</p>
                 </div>
-                <div class="UI_design">
+                <div class="skillcontainer">
                     <h3 class="skill_h">User Interface Design</h3>
                         <p class="skill_p">Design Systems, Storyboarding, Storyboarding, Prototyping, Low to High-fidelity Design, Illustration, Web and UI Design, Color Theory, Typography, Iconography</p>
                  </div>
-                <div class="tools">
+                <div class="skillcontainer">
                      <h3 class="skill_h">Software & Computers</h3>
                          <p class="skill_p">Figma, Procreate, Adobe Suite, Microsoft Office, Google G Suite, MailChimp, Asana, Canva, R Programming, MATLAB, Versed in HTML/CSS/JavaScript/jQuery, Social Media Outlets, Content Management Systems</p>
                 </div>
@@ -74,14 +101,4 @@
             <h1 class="viewWork">View All Work</h1>
         </section>
     </body>
-    <!--<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>-->
-    <script
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous">
-    </script>
-    <!--<script type="text/javascript" src="js/hoverline.js"></script>-->
-    <script type="text/javascript" src="js/index.js">
-        $('.category').makeNavbar();
-    </script>
 </html>
